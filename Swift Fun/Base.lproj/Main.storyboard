@@ -31,18 +31,42 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJw-O9-jqE"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ZZ-Mu-e28">
+                                <rect key="frame" x="175" y="270" width="25" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zN-h7-MDF">
+                                <rect key="frame" x="175" y="219" width="25" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O46-DQ-5gg">
+                                <rect key="frame" x="163" y="143" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7zN-h7-MDF" firstAttribute="top" secondItem="O46-DQ-5gg" secondAttribute="bottom" constant="45" id="MdR-yI-drT"/>
                             <constraint firstItem="DTM-lg-Mja" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NhY-Yz-nNK"/>
+                            <constraint firstItem="9ZZ-Mu-e28" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UUh-hJ-Emy"/>
+                            <constraint firstItem="nf1-OC-yVq" firstAttribute="top" secondItem="9ZZ-Mu-e28" secondAttribute="bottom" constant="23" id="WVZ-se-ckg"/>
+                            <constraint firstItem="7zN-h7-MDF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YMZ-ww-imm"/>
                             <constraint firstItem="DTM-lg-Mja" firstAttribute="top" secondItem="nf1-OC-yVq" secondAttribute="bottom" constant="10" id="ezZ-Uy-Aic"/>
+                            <constraint firstItem="9ZZ-Mu-e28" firstAttribute="top" secondItem="7zN-h7-MDF" secondAttribute="bottom" constant="21" id="kJA-mX-2dq"/>
                             <constraint firstItem="nf1-OC-yVq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mBg-Bo-do3"/>
+                            <constraint firstItem="O46-DQ-5gg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sXV-9U-bT2"/>
                             <constraint firstItem="nf1-OC-yVq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xx7-KL-tFY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="O46-DQ-5gg" id="0rf-M7-VvL"/>
+                        <outlet property="bottomTextField" destination="9ZZ-Mu-e28" id="HC0-82-gVe"/>
                         <outlet property="myLabel" destination="nf1-OC-yVq" id="6yb-w9-w1w"/>
+                        <outlet property="topTextField" destination="7zN-h7-MDF" id="fEW-7Q-jfn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
